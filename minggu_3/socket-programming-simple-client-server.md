@@ -166,6 +166,8 @@ Program ini menerapkan konsep sederhana untuk menerima dan memproses pesan dari 
 
 Namun, ada beberapa perbaikan dan penyesuaian yang perlu dipertimbangkan, tergantung pada kebutuhan Anda dan situasi penggunaan yang lebih kompleks, seperti mengelola penanganan kesalahan lebih baik atau meningkatkan keamanan. Selain itu, perlu diingat bahwa program ini hanya bersifat demonstratif dan mungkin perlu dikembangkan lebih lanjut untuk keperluan produksi yang lebih serius.
 
+Program di atas tidak melakukan penanganan koneksi setengah tertutup (half-closed) secara eksplisit. Koneksi dianggap tertutup secara penuh (full-closed) saat close(client_fd) dipanggil dalam loop yang berjalan di dalam proses anak (child process). Ini mengakibatkan koneksi client-server ditutup sepenuhnya saat suatu kondisi terpenuhi, seperti ketika pesan "close" diterima atau ketika koneksi telah berlangsung melebihi batas waktu tertentu (5 detik dalam contoh ini).
+
 ### Membuat socket untuk sisi client
 
 ```c
@@ -269,3 +271,31 @@ Berikut adalah analisis singkat dari program ini:
 8. **Pengecekan Pesan "quit"**: Program memeriksa apakah respons dari server adalah pesan "quit". Jika ya, program akan keluar dari loop dan menyelesaikan eksekusi.
 
 Program ini adalah contoh sederhana dari klien soket yang berkomunikasi dengan server menggunakan protokol TCP/IP. Ini dapat digunakan sebagai dasar untuk mengembangkan aplikasi klien yang lebih kompleks. Sebagai catatan, dalam pengembangan yang lebih lanjut, Anda mungkin ingin menangani kesalahan dengan lebih baik dan memberikan lebih banyak fitur kepada pengguna, seperti mengelola koneksi, menggabungkan protokol komunikasi yang lebih canggih, atau menambahkan enkripsi komunikasi.
+
+## Percobaan
+
+Dalam percobaan ini saya mencoba untuk mengirim pesan string 'a' dengan panjang 4 dan 5. Pesan tersebut diterima server lalu dikirimkan lagi ke client dengan sukses.
+
+<img src="./asset/socket.png">
+
+## Weireshark Analisis
+
+Diabawah ini adalah perncoba mengirim pesan sebanyak 5000 karakter dari client ke server.
+
+<img src="./asset/terminaluntilN.png">
+
+<img src="./asset/serverUntilN.png">
+
+Satu request dalam dua segmen TCP terjadi karena data yang ingin dikirimkan oleh pengirim (host sumber) melebihi ukuran maksimum yang dapat diakomodasi dalam satu segmen TCP atau Maximum Segment Size (MSS). Segmen TCP adalah unit data dalam protokol TCP, dan ukurannya terbatas oleh beberapa faktor, termasuk Maximum Segment Size yang ditentukan selama penegosiasian koneksi TCP dan ukuran jendela (window size) yang tersedia di kedua ujung koneksi.
+
+Berikut adalah beberapa alasan mengapa request dapat dibagi menjadi dua segmen TCP:
+
+1. **MSS Terbatas:** Maximum Segment Size (MSS) adalah ukuran maksimum data yang dapat dikirim dalam satu segmen TCP. Nilai MSS ini dapat bervariasi tergantung pada implementasi dan konfigurasi TCP. Jika ukuran data yang ingin dikirim melebihi nilai MSS, maka data harus dibagi menjadi beberapa segmen yang lebih kecil.
+   
+2. **Penggunaan PSH:** PSH (Push) adalah salah satu flag dalam header TCP yang mengindikasikan bahwa data perlu segera disampaikan ke aplikasi penerima. Jika aplikasi pengirim menetapkan flag PSH, maka segmen akan dikirim secepat mungkin. Ini bisa menyebabkan pengiriman lebih cepat dari segmen pertama yang berisi data yang telah di-push, dan segmen kedua untuk data tambahan.
+   
+3. **Optimasi dan Pengiriman Efisien:** Terkadang, pembagian data menjadi segmen yang lebih kecil dapat memungkinkan pengiriman yang lebih efisien. Segmen yang lebih kecil dapat meminimalkan overhead dalam jaringan dan memungkinkan pengiriman data secepat mungkin jika ada kebutuhan mendesak untuk menerima data oleh penerima.
+   
+4. **Ukuran Jendela (Window Size):** Ukuran jendela (window size) TCP diatur oleh kedua ujung koneksi. Jika ukuran jendela kecil, maka penerima akan memberi tahu pengirim untuk mengurangi laju pengiriman data. Dalam situasi ini, pengirim dapat membagi data menjadi segmen yang lebih kecil agar sesuai dengan ukuran jendela yang tersedia.
+
+Dalam kasus ini, request TCP dibagi menjadi dua segmen karena beberapa faktor di atas yang mengharuskan pembagian data menjadi lebih kecil agar sesuai dengan batasan-batasan yang ada dalam protokol TCP dan konfigurasi jaringan.
