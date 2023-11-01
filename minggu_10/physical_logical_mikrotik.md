@@ -1,6 +1,7 @@
-# Design Cisco Mikrotik
+# Physical dan Logical Miro Mikrotik
 
-<Img src="assets/physicalDesign.png">
+<Img src="assets/physical.png">
+<Img src="assets/logical.png">
 
 Konfigurasi router dan pc :
 
