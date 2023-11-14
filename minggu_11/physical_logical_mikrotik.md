@@ -1,7 +1,7 @@
 # Physical dan Logical Miro Mikrotik
 
-<Img src="assets/physical.png">
-<Img src="assets/logical.png">
+<Img src="asset/physical.png">
+<Img src="asset/logical.png">
 
     - Static
         Network     : 192.168.3.0
