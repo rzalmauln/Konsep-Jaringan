@@ -1,10 +1,11 @@
 # Laporan Praktikum Minggu ke 2
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
 
-1. Rizal Maulana (3122600004)
-2. Ezra Septian Handyanto (3122600016)
-3. Septian Achmad Rojabbi (3122600025)
-    
 # Analisis Flow-Graph HTTP
 
 ![gambar](assets/flow-graph.png)

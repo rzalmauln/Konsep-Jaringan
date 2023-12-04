@@ -1,5 +1,11 @@
 ## Pembentukan koneksi dengan Three-Way Handshaking
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 Three-Way Handshaking adalah proses yang terjadi saat dua perangkat (misalnya, komputer dan server) ingin memulai koneksi TCP (Transmission Control Protocol) satu sama lain dalam jaringan komputer. Tujuan dari Three-Way Handshaking adalah untuk memastikan bahwa kedua perangkat mengakui kesiapan mereka untuk memulai komunikasi, membangun parameter koneksi, dan memastikan sinkronisasi yang benar sebelum pertukaran data dimulai. Proses ini terdiri dari tiga langkah yang dilakukan dalam urutan tertentu:
 
 1. **Langkah 1 - Permintaan Koneksi (SYN):**

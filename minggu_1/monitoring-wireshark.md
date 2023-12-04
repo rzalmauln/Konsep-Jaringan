@@ -1,5 +1,11 @@
 ## Monitoring Protocol HTTP, TELNET, DNS
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 ![gambar](./Screen%20Shot%202023-08-28%20at%2016.03.06.png)
 
 Memantau protokol HTTP, Telnet, dan DNS menggunakan Wireshark melibatkan perekaman dan analisis paket jaringan yang melewati antarmuka jaringan Anda. Wireshark adalah alat analisis jaringan yang sangat kuat yang memungkinkan Anda untuk melihat detail paket jaringan dan menganalisis protokol yang digunakan. Berikut langkah-langkah umum untuk memantau protokol HTTP, Telnet, dan DNS menggunakan Wireshark:

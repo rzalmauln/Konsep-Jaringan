@@ -1,5 +1,11 @@
 # Dinamis Routing: Meningkatkan Efisiensi dan Kelangsungan Jaringan
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 Routing adalah aspek penting dalam jaringan komputer yang memungkinkan data untuk bergerak dari satu titik ke titik lain dalam jaringan. Ada dua jenis utama routing: statis dan dinamis. Dalam tulisan ini, kita akan membahas dinamis routing, yang merupakan pendekatan yang lebih fleksibel dan adaptif untuk mengelola lalu lintas jaringan.
 
 Dinamis routing adalah metode di mana router dalam jaringan secara otomatis dan terus-menerus berkomunikasi satu sama lain untuk memutuskan jalur terbaik bagi paket data. Sistem ini menggunakan algoritma yang dapat merespons perubahan dalam topologi jaringan, volume lalu lintas, atau kegagalan perangkat keras dengan cepat dan efisien. Ini berbeda dengan routing statis, di mana jalur tetap diatur sebelumnya dan tidak berubah tanpa intervensi manusia.

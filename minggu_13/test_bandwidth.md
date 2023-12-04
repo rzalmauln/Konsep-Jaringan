@@ -1,5 +1,11 @@
 # Tes Bandwidth pada Mikrotik
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 Bandwidth mengacu pada kapasitas maksimum atau laju transfer data yang dapat ditangani oleh suatu jaringan atau saluran komunikasi dalam suatu periode waktu tertentu. Istilah ini umumnya digunakan untuk mengukur seberapa cepat data dapat dikirim atau diterima melalui suatu koneksi internet atau jaringan komputer.
 
 Bandwidth diukur dalam bit per detik (bps) atau satuan yang lebih besar seperti kilobit per detik (kbps), megabit per detik (Mbps), atau gigabit per detik (Gbps), tergantung pada seberapa besar kapasitas jaringannya.

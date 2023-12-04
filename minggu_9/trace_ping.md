@@ -1,8 +1,10 @@
-    Nama            : Rizal Maulana
-    NRP             : 3122600004
-    Kelas           : 2 D4 IT A
-
 ## TRACE PING
+
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
 
 ### A. KONFIGURASI 1 ROUTER, 2 SWITCH & 4 PC
 

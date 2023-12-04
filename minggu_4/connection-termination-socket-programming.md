@@ -1,5 +1,11 @@
 # CONNECTION TERMINATION SOCKET PROGRAMMING
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 ## 1. quit
 
 Ketika mengetikkan "quit" di terminal client (client.c), koneksi akan ditutup sepenuhnya (full closed).

@@ -1,5 +1,11 @@
 # Protokol Telnet
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 Telnet (Telecommunication network) adalah protokol aplikasi yang digunakan di Internet atau jaringan area lokal untuk menyediakan fasilitas komunikasi berorientasi teks interaktif dua arah menggunakan koneksi terminal virtual.
 
 Telnet dikembangkan pada tahun 1969 dimulai dengan RFC 15, diperluas pada RFC 855, dan distandarisasi sebagai Internet Engineering Task Force (IETF) Standar Internet STD 8, salah satu standar Internet pertama. Nama singkatan dari "teletype network"

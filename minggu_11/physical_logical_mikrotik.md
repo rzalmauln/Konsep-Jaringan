@@ -1,5 +1,11 @@
 # Physical dan Logical Miro Mikrotik
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 <Img src="asset/physical.png">
 <Img src="asset/logical.png">
 

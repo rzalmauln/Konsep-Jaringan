@@ -1,5 +1,11 @@
 # PING DAN TRACERT
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 ## Ping
 
 Perintah ping adalah suatu instruksi yang digunakan untuk menguji konektivitas jaringan dan mengukur latensi (waktu tempuh) antara komputer dan suatu target, yang umumnya berupa alamat IP atau nama domain. Fungsi utama dari perintah ini adalah untuk memeriksa apakah suatu komputer dapat terhubung dengan suatu tujuan melalui jaringan tertentu dan juga untuk memantau stabilitas jaringan.

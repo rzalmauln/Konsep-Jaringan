@@ -1,5 +1,11 @@
 ## Kenapa 1 port FTP bisa memakai UDP atau TCP
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 Protokol FTP (File Transfer Protocol) secara tradisional menggunakan TCP (Transmission Control Protocol) sebagai protokol transportnya. Namun, seiring dengan perkembangan teknologi dan kebutuhan yang beragam, ada beberapa implementasi yang memungkinkan penggunaan protokol FTP melalui UDP (User Datagram Protocol). Tetapi perlu dipahami bahwa penggunaan UDP untuk FTP tidak umum dan biasanya lebih rumit.
 
 Alasan mengapa protokol FTP dapat diimplementasikan menggunakan baik UDP maupun TCP adalah karena perbedaan sifat masing-masing protokol:

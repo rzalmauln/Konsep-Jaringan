@@ -1,5 +1,11 @@
 # PING CISCO PACKET TRACER
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
 <div align="center">
 <img src="assets/Screen Shot 2023-10-03 at 15.00.56.png">
 </div>

@@ -1,5 +1,12 @@
 ## Apa itu OSI Layer
 
+    Nama		: Rizal Maulana
+    NRP		: 3122600004
+    Kelas		: 2 D4 Teknik Informatika A
+    Mata Kuliah	: Konsep Jaringan
+    Dosen Pengampu	: Dr. Ferry Astika Saputra ST, M.Sc
+
+
 Setiap komputer dalam jaringan memiliki cara berkomunikasinya masing-masing. Komputer bermerek A memiliki bahasa sendiri, dan hanya bisa berkomunikasi dengan perangkat lain yang bermerek sama. Hal tersebut juga terjadi pada sistem jaringan. Di mana pertukaran informasi antar jaringan tidak bisa terjalin dengan baik. Sementara tentu saja proses komunikasi dibutuhkan tidak hanya oleh komputer dalam satu sistem jaringan tertentu.
 
 Maka, dibutuhkan standar khusus untuk memungkinkan komunikasi dapat terjalin secara menyeluruh. Oleh karena itulah, kemudian ISO (International Standart Organization) menetapkan standar OSI Layer tentang protokol komunikasi untuk segala jenis sistem jaringan.
